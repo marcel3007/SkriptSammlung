@@ -12,7 +12,7 @@ public class EncryptionDecryptionTest {
 
         String testStr = "Vicky is the best! <3";
 
-        int key = 123;
+        int key = 5;
 
         String encryptedText = encrypt(testStr, key);
         System.out.println("Enrypted Text: " + encryptedText);
