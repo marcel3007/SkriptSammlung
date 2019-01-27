@@ -1,6 +1,7 @@
 package streams.caesar;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /**
  * https://codereview.stackexchange.com/questions/36884/critique-of-filterinputstream-and-filteroutputstream-classes
@@ -23,7 +24,7 @@ public class EncryptionDecryptionTest {
 
     private static String encrypt(String textToEncrypt, int key) throws IOException {
 
-        InputStream in = new ByteArrayInputStream(textToEncrypt.getBytes("UTF-8"));
+        InputStream in = new ByteArrayInputStream(textToEncrypt.getBytes(StandardCharsets.UTF_8));
         OutputStream out = new ByteArrayOutputStream();
         ShiftCipherOutputStream encryptOut = new ShiftCipherOutputStream(out);
 
@@ -43,7 +44,7 @@ public class EncryptionDecryptionTest {
     }
 
     private static String decrypt(String textToDecrypt, int key) throws IOException {
-        InputStream in = new ByteArrayInputStream(textToDecrypt.getBytes("UTF-8"));
+        InputStream in = new ByteArrayInputStream(textToDecrypt.getBytes(StandardCharsets.UTF_8));
         ShiftCipherInputStream decryptIn = new ShiftCipherInputStream(in);
         decryptIn.setKey(3);
 
