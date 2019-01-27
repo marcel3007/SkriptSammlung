@@ -7,8 +7,8 @@ public class JOSTest {
 
     public static void main(String[] args){
         JOSTest test = new JOSTest();
-        test.save("test.dat", new MyClass(10, 20));
-        test.load("test.dat");
+        test.save("jos.dat", new MyClass(10, 20));
+        test.load("jos.dat");
     }
 
     private void save(String filename, MyClass myclass) {

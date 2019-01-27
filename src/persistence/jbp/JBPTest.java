@@ -8,8 +8,8 @@ public class JBPTest {
 
     public static void main(String[] args){
         JBPTest test = new JBPTest();
-        test.save("test.dat", new MyClass(10, 20));
-        test.load("test.dat");
+        test.save("jbp.xml", new MyClass(10, 20));
+        test.load("jbp.xml");
     }
 
     private void save(String filename, MyClass myclass){

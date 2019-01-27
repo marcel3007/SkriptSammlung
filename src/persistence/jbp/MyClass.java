@@ -8,21 +8,21 @@ public class MyClass {
     private int a;
     private int b;
 
-    MyClass() {
+    public MyClass() {
         a = 0;
         b = 0;
     }
 
-    MyClass(int a, int b){
+    public MyClass(int a, int b){
         this.a = a;
         this.b = b;
     }
 
-    int getA() {
+    public int getA() {
         return a;
     }
 
-    int getB() {
+    public int getB() {
         return b;
     }
 
