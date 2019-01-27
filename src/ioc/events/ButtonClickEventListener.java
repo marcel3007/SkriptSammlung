@@ -1,10 +1,10 @@
 package ioc.events;
 
-public class InputEventListener implements IEventListener {
+public class ButtonClickEventListener implements IEventListener {
 
     @Override
     public void onInputEvent(IEvent event) {
-        System.out.print("InputEventListener");
+        System.out.print("ButtonClickEventListener");
         System.out.print(" | EventSource: " + event.getSource());
         System.out.println(" | EventText: " + event.getText());
     }

@@ -27,7 +27,6 @@ public class EncryptionDecryptionTest {
         InputStream in = new ByteArrayInputStream(textToEncrypt.getBytes(StandardCharsets.UTF_8));
         OutputStream out = new ByteArrayOutputStream();
         ShiftCipherOutputStream encryptOut = new ShiftCipherOutputStream(out);
-
         encryptOut.setKey(key);
 
         int b;
