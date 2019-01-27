@@ -28,7 +28,7 @@ public class EncryptionDecryptionTest {
         OutputStream out = new ByteArrayOutputStream();
         ShiftCipherOutputStream encryptOut = new ShiftCipherOutputStream(out);
 
-        encryptOut.setKey(3);
+        encryptOut.setKey(key);
 
         int b;
         while ((b = in.read()) != -1) {
@@ -46,7 +46,7 @@ public class EncryptionDecryptionTest {
     private static String decrypt(String textToDecrypt, int key) throws IOException {
         InputStream in = new ByteArrayInputStream(textToDecrypt.getBytes(StandardCharsets.UTF_8));
         ShiftCipherInputStream decryptIn = new ShiftCipherInputStream(in);
-        decryptIn.setKey(3);
+        decryptIn.setKey(key);
 
         OutputStream out = new ByteArrayOutputStream();
 
