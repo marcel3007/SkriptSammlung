@@ -1,4 +1,4 @@
-package ioc.events;
+package entwurfsmuster.ioc.events;
 
 import org.junit.jupiter.api.Test;
 

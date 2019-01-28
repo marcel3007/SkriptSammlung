@@ -1,4 +1,4 @@
-package ioc.observer;
+package entwurfsmuster.ioc.observer;
 
 import java.util.Observable;
 

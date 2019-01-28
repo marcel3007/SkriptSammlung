@@ -1,4 +1,4 @@
-package ioc.events;
+package entwurfsmuster.ioc.events;
 
 public class InputEventListener implements IEventListener {
 
